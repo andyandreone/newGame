@@ -56,7 +56,7 @@
 }
 
 .banner_img img{
-    width: 300px;
+    width: 100%;
     display: block;
 }
 
@@ -70,7 +70,7 @@
     position: absolute;
     bottom: -150;
     
-    animation: burbujas 3s linear infinite ;
+    animation: burbujas 3s linear infinite;
 }
 
 .burbuja:nth-child(1){
@@ -186,18 +186,23 @@
 .papyrus{
     background-image: url("./img/papyrus3.jpg");
     width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
     text-align: center;
+    ion-icon {
+        font-size: 100px;
+        color: black;
+        margin-left: 91px;
+    }
 
     .pregunta{
         font-family: Indie Flower, Hurricane;
         font-size: 2em;
         font-weight: bold;
-        color:black;
-       
+        color:black;   
     }
+}
+
+.col-md-3{
+    display: inline-block;
+    margin: 5px;
 }
